@@ -1,0 +1,10 @@
+<div class="container">
+    <label id="example-radio-group-label">Vælg etage</label>
+    <mat-radio-group
+      aria-labelledby="example-radio-group-label"
+      class="example-radio-group">
+      <mat-radio-button class="example-radio-button" (click)="onSelectLevel(floor)" *ngFor="let floor of floors" [value]="floor.id">
+        {{floor.name}}
+      </mat-radio-button>
+    </mat-radio-group>
+</div>

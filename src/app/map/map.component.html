@@ -1,0 +1,8 @@
+<div id="map">
+    <app-level-picker 
+        class="level" 
+        [floors]="floors" 
+        (selectedFloor)="selectedFloor($event)"
+    ></app-level-picker>
+</div>
+<button class="clear" (click)="clearMap()">Clear Map</button>
